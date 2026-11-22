@@ -1,6 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RescueNet Nexus</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="/style.css"></head><body>
-<div id="login" class="login"><form id="loginForm"><h1>RESCUENET <span>NEXUS</span></h1><p>Emergency response command center</p><label>Email</label><input id="email" type="email" value="admin@rescunet.local" required><label>Password</label><input id="password" type="password" value="ChangeMe123!" required><button>Sign in</button><small>Demo credentials are configurable in .env</small></form></div>
+
+<div id="login" class="login"><form id="loginForm"><h1>RESCUENET <span>NEXUS</span></h1><p>Emergency response command center</p><label>Email</label><input id="email" name="email" type="email" value="admin@rescunet.local" required><label>Password</label><input id="password" name="password" type="password" value="ChangeMe123!" required><button>Sign in</button><small>Demo credentials are configurable in .env</small></form></div>
+
 <div id="app" class="hidden"><aside><h2>RESCUENET<br><span>NEXUS</span></h2><p class="muted">COMMAND CENTER</p><nav>
 <button data-tab="overview" class="active">Overview</button><button data-tab="incidents">Incidents</button><button data-tab="map">Live map</button><button data-tab="resources">Resources & teams</button><button data-tab="prediction">Risk prediction</button><button data-tab="alerts">Alerts</button><button data-tab="analytics">Analytics</button><button data-tab="admin">Administration</button></nav><button id="logout" class="logout">Log out</button></aside>
 <main><header><div><h1 id="pageTitle">Command overview</h1><p class="muted">Geospatial intelligence · Dynamic emergency dispatch</p></div><div id="connection" class="pill">Connecting…</div></header>
